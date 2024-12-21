@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDTEC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="icon" href="assets/icons/logoo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/header.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="humburger-menu">
+                <i class="bi bi-list" id="menuIcon-mobile"></i>
+                <div class="menu-mobile">
+                    <span class="close-mobile" id="close-modal-mobile">&times;</span>
+                    <ul>
+                        <div class="mble-list">
+                            <li class="menu-item"><a href="#">Service</a>
+                                <span class="arrow-icon"><i class="bi bi-chevron-down"></i></span>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Audit</a></li>
+                                    <li><a href="#">Audit & Assurance Solutions</a></li>
+                                    <li><a href="#">Operational Council</a></li>
+                                    <li><a href="#">Conseil Juridique et fiscal</a></li>
+                                    <li><a href="#">Expertise Consulting</a></li>
+                                    <li><a href="#">Legal and Tax Advice </a></li>
+                                    <li><a href="#">Finacial Services</a></li>
+                                    <li><a href="#">Sustainable</a></li>
+                                    <li><a href="#">International Business</a></li>
+                                    <li><a href="#">Outsourcing or BPO</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="mble-list">
+                            <li class="menu-item"><a href="#">Secteurs</a>
+                                <span class="arrow-icon"><i class="bi bi-chevron-down"></i></span>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Aeronautics and Defence</a></li>
+                                    <li><a href="#">Financial Services</a></li>
+                                    <li><a href="#">Agri Foods</a></li>
+                                    <li><a href="#">Public Social Economy</a></li>
+                                    <li><a href="#">Privite Equity</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="mble-list">
+                            <li><a href="#">Products</a></li>
+                        </div>
+                        <div class="mble-list">
+                            <li><a href="#">Insights</a></li>
+                        </div>
+                        <div class="mble-list">
+                            <li><a href="#">Support</a></li>
+                        </div>
+                        <div class="mble-list">
+                            <li><a href="#">Azuregram</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <a class="navbar-brand" href="#">
+                <img src="assets/icons/logo.svg" alt="IMDTEC">
+            </a>
+
+            <div class="collapse navbar-collapse" id="servicesDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="servicesLink">
+                            Services
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="mega-dropdown">
+
+                            <div class="mega-dropdown-content">
+                                <div class="mega-dropdown-sidebar">
+
+                                    <h4> Our Activities</h4>
+                                    <hr class="line">
+                                    <a class="sidebar-link" data-target="audit" href="#">Audit <i
+                                            class="bi bi-chevron-left"></i></a>
+                                    <a class="sidebar-link" data-target="finance" href="#">Audit & Assurance Solutions<i
+                                            class="bi bi-chevron-left"></i></a>
+                                    <a class="sidebar-link" data-target="council" href="#">Operational Council <i
+                                            class="bi bi-chevron-left"></i></a>
+                                    <a class="sidebar-link" href="#">Conseil Juridique et fiscal </a>
+
+                                    <a class="sidebar-link" data-target="consulting" href="#">Expertise Consulting <i
+                                            class="bi bi-chevron-left"></i></a>
+                                    <a class="sidebar-link" data-target="legal" href="#">Legal and Tax Advice <i
+                                            class="bi bi-chevron-left"></i></a>
+                                    <a class="sidebar-link" href="#">Finacial Services </a>
+                                    <a class="sidebar-link" data-target="sustainable" href="#">Sustainable
+                                        Transformation <i class="bi bi-chevron-left"></i></a>
+                                    <a class="sidebar-link" data-target="international" href="#">International Business
+                                        Advisory <i class="bi bi-chevron-left"></i></a>
+                                    <a class="sidebar-link" data-target="outsourcing" href="#">Outsourcing or BPO <i
+                                            class="bi bi-chevron-left"></i></a>
+                                </div>
+                                <div class="mega-dropdown-main">
+                                    <span class="close-btn" id="closeDropdown">&times;</span>
+                                    <div id="audit" class="content-item active">
+                                        <h1 class="title-audit">Audit</h1>
+                                        <hr class="line">
+                                        <p class="description-audit">
+                                            Grant Thornton, a major player in Auditing in France and around the world
+                                            for large groups, mid-sized companies, family businesses and the public
+                                            sector.
+                                        </p>
+                                        <a href="#" class="audit-link">
+                                            See this page <span class="audit-arrow"></span>
+                                        </a>
+                                        <hr class="line">
+
+                                        <div class="insight-section">
+
+                                            <div class="insight-content">
+                                                <div class="insight-text">
+                                                    <div class="insight-cards">
+                                                        <div class="insight-card">
+                                                            <h3>A powerful and integrated international network</h3>
+                                                            <p>Un réseau international fédéré autour d’une promesse
+                                                                commune Go Beyond – Allons plus loin ensemble.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Digital Audit - Data Analytics Audit</h3>
+                                                            <p>A l’instar de nos clients, de toutes tailles et opérant
+                                                                dans toutes les industries, notre activité audit se
+                                                                transforme et innove, en adoptant et...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Accounting doctrine</h3>
+                                                            <p>Le département Doctrine Comptable intervient en soutien
+                                                                des équipes Grant Thornton pour l’accompagnement de
+                                                                leurs clients dans leurs...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Auditing at the heart of the territories by Grant
+                                                                Thornton</h3>
+                                                            <p>Grâce à une implantation au cœur des territoires (24
+                                                                bureaux), nos équipes Audit accompagnent les groupes
+                                                                internationaux...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>People & Culture</h3>
+                                                            <p>Chez Grant Thornton, nous vous offrons l’occasion de
+                                                                vivre l’Expérience de la Confiance en révélant le
+                                                                meilleur de vous-même au sein d’équipes conviviales et
+                                                                soudées.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Financial Services</h3>
+                                                            <p>Nos équipes d’audit accompagnent les établissements
+                                                                financiers, les sociétés de gestion d’actifs et les
+                                                                entreprises d’assurance.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="insight-image">
+                                                    <h2>Insight:</h2>
+                                                    <img src="assets/images/image3.jpg" alt="Insight Image" />
+                                                    <div class="overlay-cards">
+                                                        <div class="overlay-card">
+                                                            <h3>IFRS Example</h3>
+                                                            <p>Consolidated Financial Statements...</p>
+                                                            <p>Less than a minute | Oct 17, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="finance" class="content-item active">
+                                        <h1 class="title-audit">Audit & Assurance Solutions</h1>
+                                        <hr>
+                                        <p class="description-audit">
+                                            Beyond the legal audit, our Audit & Assurance Solutions help to inform the
+                                            decision-making of all stakeholders. </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+
+                                        <hr>
+
+                                        <div class="insight-section">
+
+                                            <div class="insight-content">
+                                                <div class="insight-text">
+                                                    <div class="insight-cards">
+                                                        <div class="insight-card">
+                                                            <h3>A powerful and integrated international network</h3>
+                                                            <p>Un réseau international fédéré autour d’une promesse
+                                                                commune Go Beyond – Allons plus loin ensemble.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Digital Audit - Data Analytics Audit</h3>
+                                                            <p>A l’instar de nos clients, de toutes tailles et opérant
+                                                                dans toutes les industries, notre activité audit se
+                                                                transforme et innove, en adoptant et...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Accounting doctrine</h3>
+                                                            <p>Le département Doctrine Comptable intervient en soutien
+                                                                des équipes Grant Thornton pour l’accompagnement de
+                                                                leurs clients dans leurs...</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="insight-image">
+                                                    <h2>Insight:</h2>
+                                                    <img src="assets/images/image4.jfif" alt="Insight Image" />
+                                                    <div class="overlay-cards">
+                                                        <div class="overlay-card">
+                                                            <h3>IFRS Example</h3>
+                                                            <p>Consolidated Financial Statements...</p>
+                                                            <p>Less than a minute | Oct 17, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="council" class="content-item active">
+                                        <h1 class="title-audit">Financial advice</h1>
+                                        <hr>
+                                        <p class="description-audit">
+                                            Buying or selling a company, managing a difficult situation, projecting
+                                            future results, are key moments in the life of a company and its... </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+
+                                        <hr>
+
+                                        <div class="insight-section">
+
+                                            <div class="insight-content">
+                                                <div class="insight-text">
+                                                    <div class="insight-cards">
+                                                        <div class="insight-card">
+                                                            <h3>A powerful and integrated international network</h3>
+                                                            <p>Un réseau international fédéré autour d’une promesse
+                                                                commune Go Beyond – Allons plus loin ensemble.</p>
+                                                        </div>
+
+                                                        <div class="insight-card">
+                                                            <h3>Accounting doctrine</h3>
+                                                            <p>Le département Doctrine Comptable intervient en soutien
+                                                                des équipes Grant Thornton pour l’accompagnement de
+                                                                leurs clients dans leurs...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Auditing at the heart of the territories by Grant
+                                                                Thornton</h3>
+                                                            <p>Grâce à une implantation au cœur des territoires (24
+                                                                bureaux), nos équipes Audit accompagnent les groupes
+                                                                internationaux...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>People & Culture</h3>
+                                                            <p>Chez Grant Thornton, nous vous offrons l’occasion de
+                                                                vivre l’Expérience de la Confiance en révélant le
+                                                                meilleur de vous-même au sein d’équipes conviviales et
+                                                                soudées.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Financial Services</h3>
+                                                            <p>Nos équipes d’audit accompagnent les établissements
+                                                                financiers, les sociétés de gestion d’actifs et les
+                                                                entreprises d’assurance.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="insight-image">
+                                                    <h2>Insight:</h2>
+                                                    <img src="assets/images/image2.webp" alt="Insight Image" />
+                                                    <div class="overlay-cards">
+                                                        <div class="overlay-card">
+                                                            <h3>IFRS Example</h3>
+                                                            <p>Consolidated Financial Statements...</p>
+                                                            <p>Less than a minute | Oct 17, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="consulting" class="content-item active">
+                                        <h1 class="title-audit">Operational Council</h1>
+                                        <hr>
+                                        <p class="description-audit">
+                                            Over the past ten years, the arrival of new digital players on the market
+                                            has shaken up all traditional industries. Taken...
+                                        </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+
+                                        <hr>
+                                        <div class="insight-section">
+
+                                            <div class="insight-content">
+                                                <div class="insight-text">
+                                                    <div class="insight-cards">
+                                                        <div class="insight-card">
+                                                            <h3>A powerful and integrated international network</h3>
+                                                            <p>Un réseau international fédéré autour d’une promesse
+                                                                commune Go Beyond – Allons plus loin ensemble.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Digital Audit - Data Analytics Audit</h3>
+                                                            <p>A l’instar de nos clients, de toutes tailles et opérant
+                                                                dans toutes les industries, notre activité audit se
+                                                                transforme et innove, en adoptant et...</p>
+                                                        </div>
+
+                                                        <div class="insight-card">
+                                                            <h3>People & Culture</h3>
+                                                            <p>Chez Grant Thornton, nous vous offrons l’occasion de
+                                                                vivre l’Expérience de la Confiance en révélant le
+                                                                meilleur de vous-même au sein d’équipes conviviales et
+                                                                soudées.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Financial Services</h3>
+                                                            <p>Nos équipes d’audit accompagnent les établissements
+                                                                financiers, les sociétés de gestion d’actifs et les
+                                                                entreprises d’assurance.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="insight-image">
+                                                    <h2>Insight:</h2>
+                                                    <img src="assets/images/image3.jpg" alt="Insight Image" />
+                                                    <div class="overlay-cards">
+                                                        <div class="overlay-card">
+                                                            <h3>IFRS Example</h3>
+                                                            <p>Consolidated Financial Statements...</p>
+                                                            <p>Less than a minute | Oct 17, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="legal" class="content-item active">
+                                        <h1 class="title-audit">Legal</h1>
+                                        <hr>
+                                        <p class="description-audit">
+                                            Grant Thornton, a major player in Auditing in France and around the world
+                                            for large groups, mid-sized companies, family businesses and the public
+                                            sector.
+                                        </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+
+                                        <hr>
+                                        <div class="insight-section">
+
+                                            <div class="insight-content">
+                                                <div class="insight-text">
+                                                    <div class="insight-cards">
+                                                        <div class="insight-card">
+                                                            <h3>A powerful and integrated international network</h3>
+                                                            <p>Un réseau international fédéré autour d’une promesse
+                                                                commune Go Beyond – Allons plus loin ensemble.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Digital Audit - Data Analytics Audit</h3>
+                                                            <p>A l’instar de nos clients, de toutes tailles et opérant
+                                                                dans toutes les industries, notre activité audit se
+                                                                transforme et innove, en adoptant et...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Accounting doctrine</h3>
+                                                            <p>Le département Doctrine Comptable intervient en soutien
+                                                                des équipes Grant Thornton pour l’accompagnement de
+                                                                leurs clients dans leurs...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Auditing at the heart of the territories by Grant
+                                                                Thornton</h3>
+                                                            <p>Grâce à une implantation au cœur des territoires (24
+                                                                bureaux), nos équipes Audit accompagnent les groupes
+                                                                internationaux...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>People & Culture</h3>
+                                                            <p>Chez Grant Thornton, nous vous offrons l’occasion de
+                                                                vivre l’Expérience de la Confiance en révélant le
+                                                                meilleur de vous-même au sein d’équipes conviviales et
+                                                                soudées.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Financial Services</h3>
+                                                            <p>Nos équipes d’audit accompagnent les établissements
+                                                                financiers, les sociétés de gestion d’actifs et les
+                                                                entreprises d’assurance.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="insight-image">
+                                                    <h2>Insight:</h2>
+                                                    <img src="assets/images/image4.jfif" alt="Insight Image" />
+                                                    <div class="overlay-cards">
+                                                        <div class="overlay-card">
+                                                            <h3>IFRS Example</h3>
+                                                            <p>Consolidated Financial Statements...</p>
+                                                            <p>Less than a minute | Oct 17, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sustainable" class="content-item active">
+                                        <h1 class="title-audit">Sustainable</h1>
+                                        <hr>
+                                        <p class="description-audit">
+                                            Sustainable Transformation
+                                        </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+
+                                        <hr>
+                                        <div class="insight-section">
+
+                                            <div class="insight-content">
+                                                <div class="insight-text">
+                                                    <div class="insight-cards">
+                                                        <div class="insight-card">
+                                                            <h3>A powerful and integrated international network</h3>
+                                                            <p>Un réseau international fédéré autour d’une promesse
+                                                                commune Go Beyond – Allons plus loin ensemble.</p>
+                                                        </div>
+
+                                                        <div class="insight-card">
+                                                            <h3>People & Culture</h3>
+                                                            <p>Chez Grant Thornton, nous vous offrons l’occasion de
+                                                                vivre l’Expérience de la Confiance en révélant le
+                                                                meilleur de vous-même au sein d’équipes conviviales et
+                                                                soudées.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Financial Services</h3>
+                                                            <p>Nos équipes d’audit accompagnent les établissements
+                                                                financiers, les sociétés de gestion d’actifs et les
+                                                                entreprises d’assurance.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="insight-image">
+                                                    <h2>Insight:</h2>
+                                                    <img src="assets/images/image3.jpg" alt="Insight Image" />
+                                                    <div class="overlay-cards">
+                                                        <div class="overlay-card">
+                                                            <h3>IFRS Example</h3>
+                                                            <p>Consolidated Financial Statements...</p>
+                                                            <p>Less than a minute | Oct 17, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="international" class="content-item active">
+                                        <h1 class="title-audit">International Business Advisory</h1>
+                                        <hr>
+                                        <p class="description-audit">
+                                            International Advisory Business Services
+                                        </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+
+                                        <hr>
+
+                                        <div class="insight-section">
+
+                                            <div class="insight-content">
+                                                <div class="insight-text">
+                                                    <div class="insight-cards">
+                                                        <div class="insight-card">
+                                                            <h3>A powerful and integrated international network</h3>
+                                                            <p>Un réseau international fédéré autour d’une promesse
+                                                                commune Go Beyond – Allons plus loin ensemble.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Digital Audit - Data Analytics Audit</h3>
+                                                            <p>A l’instar de nos clients, de toutes tailles et opérant
+                                                                dans toutes les industries, notre activité audit se
+                                                                transforme et innove, en adoptant et...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Accounting doctrine</h3>
+                                                            <p>Le département Doctrine Comptable intervient en soutien
+                                                                des équipes Grant Thornton pour l’accompagnement de
+                                                                leurs clients dans leurs...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Auditing at the heart of the territories by Grant
+                                                                Thornton</h3>
+                                                            <p>Grâce à une implantation au cœur des territoires (24
+                                                                bureaux), nos équipes Audit accompagnent les groupes
+                                                                internationaux...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>People & Culture</h3>
+                                                            <p>Chez Grant Thornton, nous vous offrons l’occasion de
+                                                                vivre l’Expérience de la Confiance en révélant le
+                                                                meilleur de vous-même au sein d’équipes conviviales et
+                                                                soudées.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Financial Services</h3>
+                                                            <p>Nos équipes d’audit accompagnent les établissements
+                                                                financiers, les sociétés de gestion d’actifs et les
+                                                                entreprises d’assurance.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="insight-image">
+                                                    <h2>Insight:</h2>
+                                                    <img src="assets/images/image1.jfif" alt="Insight Image" />
+                                                    <div class="overlay-cards">
+                                                        <div class="overlay-card">
+                                                            <h3>IFRS Example</h3>
+                                                            <p>Consolidated Financial Statements...</p>
+                                                            <p>Less than a minute | Oct 17, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="outsourcing" class="content-item active">
+                                        <h1 class="title-audit">Outsourcing</h1>
+                                        <hr>
+                                        <p class="description-audit">
+                                            Outsourcing
+                                        </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+
+                                        <hr>
+
+                                        <div class="insight-section">
+
+                                            <div class="insight-content">
+                                                <div class="insight-text">
+                                                    <div class="insight-cards">
+
+                                                        <div class="insight-card">
+                                                            <h3>Auditing at the heart of the territories by Grant
+                                                                Thornton</h3>
+                                                            <p>Grâce à une implantation au cœur des territoires (24
+                                                                bureaux), nos équipes Audit accompagnent les groupes
+                                                                internationaux...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>People & Culture</h3>
+                                                            <p>Chez Grant Thornton, nous vous offrons l’occasion de
+                                                                vivre l’Expérience de la Confiance en révélant le
+                                                                meilleur de vous-même au sein d’équipes conviviales et
+                                                                soudées.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Financial Services</h3>
+                                                            <p>Nos équipes d’audit accompagnent les établissements
+                                                                financiers, les sociétés de gestion d’actifs et les
+                                                                entreprises d’assurance.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="insight-image">
+                                                    <h2>Insight:</h2>
+                                                    <img src="assets/images/image1.jfif" alt="Insight Image" />
+                                                    <div class="overlay-cards">
+                                                        <div class="overlay-card">
+                                                            <h3>IFRS Example</h3>
+                                                            <p>Consolidated Financial Statements...</p>
+                                                            <p>Less than a minute | Oct 17, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="secteursLink">
+                            Secteurs
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="mega-dropdown" id="secteursDropdown">
+
+                            <div class="mega-dropdown-content">
+                                <div class="mega-dropdown-sidebar">
+                                    <h4> Our Sectors</h4>
+                                    <hr class="line">
+                                    <a class="sidebar-link" data-target="sector1" href="#">Aeronautics and Defence<i
+                                            class="bi bi-chevron-left"></i></a>
+                                    <a class="sidebar-link" data-target="sector2" href="#">Financial Services<i
+                                            class="bi bi-chevron-left"></i></a>
+                                    <a class="sidebar-link" data-target="sector3" href="#">Agri Foods<i
+                                            class="bi bi-chevron-left"></i> </a>
+                                    <a class="sidebar-link" data-target="" href="#">Privite Equity</a>
+                                    <a class="sidebar-link" data-target="" href="#">Public Social Economy</a>
+                                </div>
+                                <div class="mega-dropdown-main">
+                                    <span class="close-btn" id="closeSecteursDropdown">&times;</span>
+                                    <div id="sector1" class="content-item active">
+                                        <h1 class="title-audit">Aeronautics, Defense and Security</h1>
+                                        <hr>
+                                        <p class="description-audit">
+                                            Aeronautics, Defense and Security
+                                        </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+
+                                        <hr>
+                                        <div class="grid-sec">
+                                            <div class="insight-image ">
+                                                <h2>Insight:</h2>
+                                                <img src="assets/images/image1.jfif" alt="Insight Image" />
+                                                <div class="overlay-cards">
+                                                    <div class="overlay-card">
+                                                        <h3>IFRS Example</h3>
+                                                        <p>Consolidated Financial Statements...</p>
+                                                        <p>Less than a minute | Oct 17, 2024</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="insight-image ">
+                                                <h2>Insight:</h2>
+                                                <img src="assets/images/image2.webp" alt="Insight Image" />
+                                                <div class="overlay-cards">
+                                                    <div class="overlay-card">
+                                                        <h3>IFRS Example</h3>
+                                                        <p>Consolidated Financial Statements...</p>
+                                                        <p>Less than a minute | Oct 17, 2024</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="insight-image ">
+                                                <h2>Insight:</h2>
+                                                <img src="assets/images/image3.jpg" alt="Insight Image" />
+                                                <div class="overlay-cards">
+                                                    <div class="overlay-card">
+                                                        <h3>IFRS Example</h3>
+                                                        <p>Consolidated Financial Statements...</p>
+                                                        <p>Less than a minute | Oct 17, 2024</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div id="sector3" class="content-item ">
+                                        <h1 class="title-audit">Outsourcing</h1>
+                                        <hr>
+                                        <p class="description-audit">
+                                            Outsourcing
+                                        </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+
+                                        <hr>
+
+                                        <div class="insight-section">
+
+                                            <div class="insight-content">
+                                                <div class="insight-text">
+                                                    <div class="insight-cards">
+
+                                                        <div class="insight-card">
+                                                            <h3>Auditing at the heart of the territories by Grant
+                                                                Thornton</h3>
+                                                            <p>Grâce à une implantation au cœur des territoires (24
+                                                                bureaux), nos équipes Audit accompagnent les groupes
+                                                                internationaux...</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>People & Culture</h3>
+                                                            <p>Chez Grant Thornton, nous vous offrons l’occasion de
+                                                                vivre l’Expérience de la Confiance en révélant le
+                                                                meilleur de vous-même au sein d’équipes conviviales et
+                                                                soudées.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Financial Services</h3>
+                                                            <p>Nos équipes d’audit accompagnent les établissements
+                                                                financiers, les sociétés de gestion d’actifs et les
+                                                                entreprises d’assurance.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="insight-image">
+                                                    <h2>Insight:</h2>
+                                                    <img src="assets/images/image1.jfif" alt="Insight Image" />
+                                                    <div class="overlay-cards">
+                                                        <div class="overlay-card">
+                                                            <h3>IFRS Example</h3>
+                                                            <p>Consolidated Financial Statements...</p>
+                                                            <p>Less than a minute | Oct 17, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="sector2" class="content-item ">
+                                        <h1 class="title-audit">Financial Services</h1>
+                                        <hr class="line">
+                                        <p class="description-audit">
+                                            Support financial institutions and insurance organizations to build the
+                                            fundamentals of their new business models.
+                                        </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+                                        <hr class="line">
+
+                                        <div class="insight-section">
+
+                                            <div class="insight-content">
+                                                <div class="insight-text">
+                                                    <div class="insight-cards">
+                                                        <div class="insight-card">
+                                                            <h3>A powerful and integrated international network</h3>
+                                                            <p>Un réseau international fédéré autour d’une promesse
+                                                                commune Go Beyond – Allons plus loin ensemble.</p>
+                                                        </div>
+
+
+
+                                                        <div class="insight-card">
+                                                            <h3>People & Culture</h3>
+                                                            <p>Chez Grant Thornton, nous vous offrons l’occasion de
+                                                                vivre l’Expérience de la Confiance en révélant le
+                                                                meilleur de vous-même au sein d’équipes conviviales et
+                                                                soudées.</p>
+                                                        </div>
+                                                        <div class="insight-card">
+                                                            <h3>Financial Services</h3>
+                                                            <p>Nos équipes d’audit accompagnent les établissements
+                                                                financiers, les sociétés de gestion d’actifs et les
+                                                                entreprises d’assurance.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="insight-image">
+                                                    <h2>Insight:</h2>
+                                                    <img src="assets/images/image3.jpg" alt="Insight Image" />
+                                                    <div class="overlay-cards">
+                                                        <div class="overlay-card">
+                                                            <h3>IFRS Example</h3>
+                                                            <p>Consolidated Financial Statements...</p>
+                                                            <p>Less than a minute | Oct 17, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="" class="content-item">
+                                        <h1 class="title-audit">Financial Services</h1>
+                                        <hr>
+                                        <p class="description-audit">
+                                            Grant Thornton, a major player in Auditing in France and around the world
+                                            for large groups, mid-sized companies, family businesses and the public
+                                            sector.
+                                        </p>
+                                        <a href="#" class="audit-link">See this page <span
+                                                class="audit-arrow"></span></a>
+
+                                        <hr>
+                                        <div class="insight-image">
+                                            <h2>Insight:</h2>
+                                            <img src="assets/images/pic.png" alt="Insight Image" />
+                                            <div class="overlay-cards">
+                                                <div class="overlay-card">
+                                                    <h3>IFRS Example</h3>
+                                                    <p>Consolidated Financial Statements...</p>
+                                                    <p>Less than a minute | Oct 17, 2024</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Azuregram</a></li>
+                </ul>
+            </div>
+            <div class="navbar-icons">
+
+                <img src="assets/icons/search.svg" alt="Search Icon" id="searchIcon" class="navbar-icon" />
+                <img src="assets/icons/menu.svg" alt="Grid Icon" class="navbar-icon" id="menuIcon" />
+                <img src="assets/icons/profile.svg" alt="Profile Icon" class="navbar-icon" />
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="grid">
+                        <div class="grid-item">
+                            <a href="link-to-finance" target="_blank">
+                                <img src="assets/images/gmail.png" alt="Finance">
+                                <p>Gmail</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-chrome" target="_blank">
+                                <img src="assets/images/youtube.png" alt="Chrome">
+                                <p>Youtube</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-password" target="_blank">
+                                <img src="assets/images/google.png" alt="Password">
+                                <p>Google</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-store" target="_blank">
+                                <img src="assets/images/playstore.ong.png" alt="Store">
+                                <p>Play</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-google-apps" target="_blank">
+                                <img src="assets/images/drive.png" alt="Google Apps">
+                                <p>Drive</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-text-editor" target="_blank">
+                                <img src="assets/images/photos.png" alt="Text Editor">
+                                <p>Photos</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-text-editor" target="_blank">
+                                <img src="assets/images/newes.png" alt="Text Editor">
+                                <p>News</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-text-editor" target="_blank">
+                                <img src="assets/images/translate.png" alt="Text Editor">
+                                <p>Translate</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-text-editor" target="_blank">
+                                <img src="assets/images/shoping.png" alt="Text Editor">
+                                <p>Shopping</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-text-editor" target="_blank">
+                                <img src="assets/images/shoping.png" alt="Text Editor">
+                                <p>Shopping</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-text-editor" target="_blank">
+                                <img src="assets/images/shoping.png" alt="Text Editor">
+                                <p>Shopping</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="link-to-text-editor" target="_blank">
+                                <img src="assets/images/shoping.png" alt="Text Editor">
+                                <p>Shopping</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <a href="link-to-your-page" target="_blank" class="button-link">
+                        Another Page
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="search-modal" id="search-modal">
+            <div class="modal-content">
+
+                <div class="search-input-btn">
+                    <div>
+                        <input type="text" id="search-input" placeholder="To search">
+                        <img src="./assets/icons/search.svg" alt="search" id="search-button">
+                    </div>
+                    <div>
+                        <span class="close" id="close-modal">&times;</span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="search-history" id="search-history">
+            <div>
+                <h4>Previous Searches</h4>
+                <ul id="previous-searches">
+                    <li>test search</li>
+                    <li>Bain and Company</li>
+                </ul>
+                <h4>Popular Searches</h4>
+                <ul>
+                    <li>Agile</li>
+                    <li>Digital</li>
+                    <li>Strategy</li>
+                </ul>
+                <div>
+                    <h4>Recently Visited Pages </h4>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <script src="assets/js/header.js"></script>
+</body>
+
+</html>
